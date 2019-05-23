@@ -250,3 +250,30 @@ p .fa-heart {
     color: #fff;
     font-size: 1.2em;
 }
+
+/*Medias Queries*/
+
+@media screen and (min-width: 785px) {
+    /*Projects*/
+
+    .projects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .overlay {
+        transition: 1s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .project:hover .overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /*Contact*/
+
+    .contact {
+        text-align: center;
+    }
+}
